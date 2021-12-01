@@ -10,4 +10,13 @@ function validateForm() {
         alert("Password Errata");
         return false;
     }
+
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("email").value))
+    {
+        alert("Formato Email Errato")
+        return (false)
+    }
+
+
   }
