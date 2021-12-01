@@ -7,6 +7,9 @@
             </form>
         </li>
         <li>
+            <a href="_index.php">Home</a>
+        </li>
+        <li>
             <?php
                 session_start();
                     //$_SESSION["login"] = true;

@@ -21,7 +21,7 @@
 
 
     <div class="maincontent">
-        <form action="login.php" method="POST">
+        <form action="php/Flogin.php" method="POST">
             <fieldset class="IN">
                 <legend>Login</legend>
                 <div class="pwmail">
