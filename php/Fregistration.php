@@ -24,6 +24,7 @@
         mysqli_stmt_execute($stmt);
 
         session_start();
+        
         $_SESSION["login"] = true;
         $_SESSION["firstname"] = $_POST["firstname"];
         $_SESSION["lastname"] = $_POST["lastname"] ;

@@ -6,6 +6,8 @@
 </head>
 <body>
     <?php
+        error_reporting(E_ALL & ~E_NOTICE);//non visualizza warning della session_start() duplicata
+        session_start();
         if(!isset($_SESSION["login"])){
             echo '
             <script>

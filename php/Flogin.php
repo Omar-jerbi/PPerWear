@@ -40,11 +40,32 @@
             $_SESSION["firstname"] = $arr[1];
             $_SESSION["lastname"] =$arr[2];
             $_SESSION["email"] = $arr[3];
+            $_SESSION["sesso"] = $arr[5]; //6,7,8,9,10 potrebbero essere null
+            $_SESSION["misura_pantaloni"] = $arr[6];
+            $_SESSION["misura_scarpe"] = $arr[7];
+            $_SESSION["misura_maglie"] = $arr[8];
+            $_SESSION["tel"] = $arr[9];
+            $_SESSION["addr"] = $arr[10];
 
 
-            echo '<script>
-            alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZATO ALLA HOME DEL SITO");
-            </script>';
+
+            if($_SESSION["sesso"] == 2){
+                echo '<script>
+                alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZATA ALLA HOME DEL SITO");
+                </script>';
+            }else{
+                if($_SESSION["sesso"] == 1){
+                    echo '<script>
+                    alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZATO ALLA HOME DEL SITO");
+                    </script>';
+                }else{
+                    echo '<script>
+                    alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZAT* ALLA HOME DEL SITO");
+                    </script>';                    
+                }
+            }
+
+            
             header("refresh:0; url= ../_index.php");            
         }
     }
