@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Index</title>
-    <link rel="stylesheet" href="/sawproject/css/general.css">
+    <link rel="stylesheet" href="css/general.css">
 </head>
 <body>
     <?php

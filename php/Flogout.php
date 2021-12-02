@@ -5,7 +5,7 @@
         <script>
             alert("NON SEI LOGGATO");
         </script>';
-        header("refresh:0; url= /sawproject/_index.php");
+        header("refresh:0; url= ../_index.php");
         exit;
     }else{
         $_SESSION = array();
@@ -17,7 +17,7 @@
         </script>';
 
         setcookie(session_name(),'',time() - 42000);
-        header("Refresh:1; url=/sawproject/_index.php");       
+        header("Refresh:1; url=../_index.php");       
     }
 
 ?>

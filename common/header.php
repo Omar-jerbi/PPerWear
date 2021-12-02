@@ -7,7 +7,6 @@
             </form>
         </li>
         <li>
-            <!-- <a href="_index.php">Home</a> -->
             <a href="/sawproject/_index.php">Home</a>
         </li>
         <li>
@@ -15,7 +14,7 @@
                 session_start();
                     //$_SESSION["login"] = true;
                 if(isset($_SESSION["login"])){
-                    echo '<a href="/sawproject/profile.php">Profilo</a>';
+                    echo '<a href= "/sawproject/profile.php">Profilo</a>';
                 }       
                 else
                     echo '<a href="/sawproject/login.php">Login</a>';

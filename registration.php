@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+        error_reporting(E_ALL & ~E_NOTICE);//non visualizza warning della session_start() duplicata
+        session_start();
         if(isset($_SESSION["login"])){
             echo '
             <script>
@@ -20,7 +22,7 @@
     ?>
 
     <div class="maincontent">
-        <form action="/sawproject/php/Fregistration.php" method="post" onsubmit="return validateForm()">
+        <form action="php/Fregistration.php" method="post" onsubmit="return validateForm()">
             <fieldset class="IN">
                 <legend>Nome e Cognome</legend>
                 

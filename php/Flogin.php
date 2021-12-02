@@ -13,7 +13,7 @@
         echo '<script>
             alert("Dati errati, riprova!");
             </script>';
-            header("refresh:0; url= /sawproject/login.php");
+            header("refresh:0; url= ../login.php");
     }else{
         $arr = mysqli_fetch_array($res);
         
@@ -22,7 +22,7 @@
             echo '<script>
             alert("Dati errati, riprova!");
             </script>';
-            header("refresh:0; url= /sawproject/login.php");
+            header("refresh:0; url= ../login.php");
         }else{
             session_start();
             
@@ -35,7 +35,7 @@
             echo '<script>
             alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZATO ALLA HOME DEL SITO");
             </script>';
-            header("refresh:0; url= /sawproject/_index.php");            
+            header("refresh:0; url= ../_index.php");            
         }
     }
 ?>
