@@ -17,7 +17,7 @@
         echo '<script>
             alert("utente già registrato");
             </script>';
-            header("refresh:0; url= ../registration.php");
+            header("refresh:0; url= /sawproject/registration.php");
     }else{
         $stmt = mysqli_prepare($connection, "INSERT INTO `utenti`(`firstname`, `lastname`, `email`, `pass`) VALUES (?, ?, ?, ?)");
         mysqli_stmt_bind_param($stmt, 'ssss', $f, $l, $m, $pw);
@@ -34,6 +34,6 @@
         alert("Clicca OK e verrai rediretto alla pagina di modifica del tuo profilo!");
         </script>';
 
-        header("refresh:0; url= ../updateprofile.php");
+        header("refresh:0; url= /sawproject/updateprofile.php");
     }
 ?>

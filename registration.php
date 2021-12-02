@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Registration</title>
-    <script src="js/validateform.js"></script>
+    <script src="/sawproject/js/validateform.js"></script>
 </head>
 <body>
     <?php
+        if(isset($_SESSION["login"])){
+            echo '
+            <script>
+            alert("SEI GIà LOGGATO");
+            </script>';
+            header("refresh:0; url= /sawproject/_index.php");
+            exit;
+        }
+        
         include("common/header.php");
     ?>
 
     <div class="maincontent">
-        <form action="php/Fregistration.php" method="post" onsubmit="return validateForm()">
+        <form action="/sawproject/php/Fregistration.php" method="post" onsubmit="return validateForm()">
             <fieldset class="IN">
                 <legend>Nome e Cognome</legend>
                 

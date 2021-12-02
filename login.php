@@ -6,22 +6,22 @@
 </head>
 <body>
     <?php
-        include("common/header.php");
-        
         if(isset($_SESSION["login"])){
             echo '
             <script>
-                alert("SEI GIà LOGGATO");
+            alert("SEI GIà LOGGATO");
             </script>';
-            header("refresh:0; url= _index.php");
+            header("refresh:0; url= /sawproject/_index.php");
             exit;
         }
+
+        include("common/header.php");       
     ?>
 
 
 
     <div class="maincontent">
-        <form action="php/Flogin.php" method="POST">
+        <form action="/sawproject/php/Flogin.php" method="POST">
             <fieldset class="IN">
                 <legend>Login</legend>
                 <div class="pwmail">

@@ -7,17 +7,18 @@
             </form>
         </li>
         <li>
-            <a href="_index.php">Home</a>
+            <!-- <a href="_index.php">Home</a> -->
+            <a href="/sawproject/_index.php">Home</a>
         </li>
         <li>
             <?php
                 session_start();
                     //$_SESSION["login"] = true;
                 if(isset($_SESSION["login"])){
-                    echo '<a href="profile.php">Profilo</a>';
+                    echo '<a href="/sawproject/profile.php">Profilo</a>';
                 }       
                 else
-                    echo '<a href="login.php">Login</a>';
+                    echo '<a href="/sawproject/login.php">Login</a>';
             ?>
         </li>
     </ul>
@@ -32,12 +33,12 @@
             <?php
                 if(isset($_SESSION["login"])){
                     echo'
-                        <li><a href="updateprofile.php">Aggiorna il tuo Profilo</a></li>
-                        <li><a href="db/storico.php">Storico Wears</a></li>                
-                        <li><a href="php/Flogout.php">Logout</a></li>
+                        <li><a href="/sawproject/updateprofile.php">Aggiorna il tuo Profilo</a></li>
+                        <li><a href="/sawproject/db/storico.php">Storico Wears</a></li>                
+                        <li><a href="/sawproject/php/Flogout.php">Logout</a></li>
                     ';
                 }else{
-                    echo '<li><a href="registration.php">Entra nel mondo PayPerWear!</a></li>';
+                    echo '<li><a href="/sawproject/registration.php">Entra nel mondo PayPerWear!</a></li>';
                 }
             ?>
         </ul>
@@ -45,9 +46,9 @@
     
     <div class="menu_navigazione">
         <ul>
-            <li><a href="novita.php">Novità</a></li>
-            <li><a href="wearsdelmese.php">Wears del mese</a></li>
-            <li><a href="carrello.php">Carrello</a></li>
+            <li><a href="/sawproject/novita.php">Novità</a></li>
+            <li><a href="/sawproject/wearsdelmese.php">Wears del mese</a></li>
+            <li><a href="/sawproject/carrello.php">Carrello</a></li>
         </ul>
     </div>
 </header>

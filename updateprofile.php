@@ -5,6 +5,26 @@
     <title>PayPerWear -Update Profile</title>
 </head>
 <body>
-    
+    <?php
+        if(!isset($_SESSION["login"])){
+            echo '
+            <script>
+                alert("PRIMA DEVI FARE IL LOGIN");
+            </script>';
+            header("refresh:0; url= /sawproject/_index.php");
+            exit;
+        }
+        
+        include("common/header.php");
+        
+    ?>
+
+    <div class="maincontent">
+
+    </div>
+
+    <?php
+        include("common/footer.php");
+    ?>
 </body>
 </html>
