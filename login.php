@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Login</title>
+    <script src="/sawproject/js/validateform2.js"></script>
 </head>
 <body>
     <?php
@@ -23,7 +24,7 @@
 
 
     <div class="maincontent">
-        <form action="php/Flogin.php" method="POST">
+        <form action="php/Flogin.php" method="POST" onsubmit="return validateForm2()">
             <fieldset class="IN">
                 <legend>Login</legend>
                 <div class="pwmail">

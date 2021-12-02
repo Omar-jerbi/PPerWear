@@ -1,4 +1,14 @@
 <?php
+    session_start();
+    if(isset($_SESSION["login"])){
+        echo '
+        <script>
+            alert("SEI GIà LOGGATO");
+        </script>';
+        header("refresh:0; url= ../_index.php");
+        exit;
+    }
+
     include_once("../db/connection.php");//$connection
 
     $m = mysqli_real_escape_string($connection ,strtolower(trim($_POST["email"])));
