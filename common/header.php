@@ -45,7 +45,7 @@
     
     <div class="menu_navigazione">
         <ul>
-            <li><a href="/sawproject/novita.php">Novità</a></li>
+            <li><a href="/sawproject/novita.php">Novità/Catalogo</a></li>
             <li><a href="/sawproject/wearsdelmese.php">Wears del mese</a></li>
             <li><a href="/sawproject/carrello.php">Carrello</a></li>
         </ul>

@@ -18,6 +18,7 @@
         }
         
         include("common/header.php");
+        
     ?>
 
     <div class="maincontent">
@@ -27,7 +28,27 @@
         Ricorda che puoi cambiarli in qualsiasi momento aggiornando il tuo profilo!
     </div>
 
+        <form action="" method="get">
+            <div class="name">    
+                Nome: <input type="text" name="cc" id="" disabled placeholder=" <?php echo $_SESSION["firstname"]; ?> ">
+            </div>
 
+            <div class="lastname">
+                Cognome: <input type="text" name="cc" id="" disabled placeholder=" <?php echo $_SESSION["lastname"]; ?> ">
+            </div>
+
+            <div class="email">
+                Email: <input type="text" name="cc" id="" disabled placeholder=" <?php echo $_SESSION["email"]; ?> ">
+            </div>
+
+            <?php 
+                if(isset($_SESSION["tel"])){
+                    include("profileext.php");
+                }else{
+                    echo "<h2>Sembra che non ci hai comunicato alcune informazioni essenziali. Aggiungile aggiornando il tuo profilo!</h2>";
+                }
+            ?>
+        </form>
 
 
     </div>

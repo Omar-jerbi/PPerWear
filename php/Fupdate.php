@@ -39,7 +39,7 @@
         $_SESSION["sesso"] = $sint; 
         $_SESSION["misura_pantaloni"] = $mpint;
         $_SESSION["misura_scarpe"] = $msint;
-        $_SESSION["misura_maglie"] = $mmint;
+        $_SESSION["misura_maglie"] = $mmint == 1 ? 'S' :($mmint == 2 ? 'M' :( $mmint == 3 ? 'L': 'XL'));
         $_SESSION["tel"] = $tel;
         $_SESSION["addr"] = $addr;
 

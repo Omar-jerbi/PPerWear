@@ -73,7 +73,7 @@
                             <option value="3035">30-35</option>
                             <option value="3538">35-38</option>
                             <option value="3841">38-41</option>
-                            <option value="41">41-43</option>
+                            <option value="4143">41-43</option>
                             <option value="4346">43-46</option>
                             <option value="1">>46</option>
                         </select>

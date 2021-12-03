@@ -43,7 +43,7 @@
             $_SESSION["sesso"] = $arr[5]; //6,7,8,9,10 potrebbero essere null
             $_SESSION["misura_pantaloni"] = $arr[6];
             $_SESSION["misura_scarpe"] = $arr[7];
-            $_SESSION["misura_maglie"] = $arr[8];
+            $_SESSION["misura_maglie"] = $arr[8] == 1 ? 'S' :($arr[8] == 2 ? 'M' :( $arr[8] == 3 ? 'L': 'XL'));
             $_SESSION["tel"] = $arr[9];
             $_SESSION["addr"] = $arr[10];
 
