@@ -1,4 +1,5 @@
-function validateForm3(){
+function validate(){
+    
     var mm = document.getElementById("misura_maglie").value;
     var ms = document.getElementById("misura_scarpe").value;
     var mp = document.getElementById("misura_pantaloni").value;
@@ -37,5 +38,5 @@ function validateForm3(){
         if(index != 4) s = s +'/';
     }
     document.getElementById("addr").value = s;
-
+   
 }

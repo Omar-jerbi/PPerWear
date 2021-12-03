@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Update Profile</title>
-    <script src="/sawproject/js/validateform3.js"></script>
+    <script src="js/validateupdate.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     ?>
 
     <div class="maincontent">
-        <form action="php/Fupdate.php" method="POST" onsubmit="return validateForm3()">
+        <form action="php/Fupdate.php" method="POST" onsubmit="return validate()">
             <fieldset class="IN">
                 <legend>Aggiorna i Tuoi Dati</legend>
                 <div class="inputs">

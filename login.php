@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Login</title>
-    <script src="/sawproject/js/validateform2.js"></script>
 </head>
 <body>
     <?php
@@ -24,13 +23,13 @@
 
 
     <div class="maincontent">
-        <form action="php/Flogin.php" method="POST" onsubmit="return validateForm2()">
+        <form action="php/Flogin.php" method="POST">
             <fieldset class="IN">
                 <legend>Login</legend>
                 <div class="pwmail">
-                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
                         
-                    <input type="password" id="pass" name="pass" placeholder="Password">
+                    <input type="password" id="pass" name="pass" placeholder="Password" required>
                 </div>  
 
                 <input class="submit" type="submit" value="Accedi">

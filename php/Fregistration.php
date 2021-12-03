@@ -32,7 +32,7 @@
 
         echo '<script>
         alert("Benvenuto in PayPerWear! Completa il tuo profilo per iniziare ad utilizzare il servizio");
-        alert("Clicca OK e verrai rediretto alla pagina di modifica del tuo profilo!");
+        alert("Clicca OK e verrai rediretto alla pagina di Modifica del tuo profilo!");
         </script>';
 
         header("refresh:0; url= ../updateprofile.php");

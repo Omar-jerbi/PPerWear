@@ -51,16 +51,16 @@
 
             if($_SESSION["sesso"] == 2){
                 echo '<script>
-                alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZATA ALLA HOME DEL SITO");
+                alert("Ciao '.ucwords($_SESSION["firstname"]).'! VERRAI REINDIRIZZATA ALLA HOME DEL SITO");
                 </script>';
             }else{
                 if($_SESSION["sesso"] == 1){
                     echo '<script>
-                    alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZATO ALLA HOME DEL SITO");
+                    alert("Ciao '.ucwords($_SESSION["firstname"]).'! VERRAI REINDIRIZZATO ALLA HOME DEL SITO");
                     </script>';
                 }else{
                     echo '<script>
-                    alert("Ciao '.$_SESSION["firstname"].'! VERRAI REINDIRIZZAT* ALLA HOME DEL SITO");
+                    alert("Ciao '.ucwords($_SESSION["firstname"]).'! VERRAI REINDIRIZZAT* ALLA HOME DEL SITO");
                     </script>';                    
                 }
             }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Registration</title>
-    <script src="/sawproject/js/validateform.js"></script>
+    <script src="js/validateform.js"></script>
 </head>
 <body>
     <?php
@@ -22,14 +22,14 @@
     ?>
 
     <div class="maincontent">
-        <form action="php/Fregistration.php" method="post" onsubmit="return validateForm()">
+        <form action="php/Fregistration.php" method="post"onsubmit="return validateForm()">
             <fieldset class="IN">
                 <legend>Nome e Cognome</legend>
                 
                 <div class="names">
-                    <input type="text" id="firstname" name="firstname" placeholder="Nome">
+                    <input type="text" id="firstname" name="firstname" placeholder="Nome" required pattern="[A-Z a-zè'òéàù]{1,30}">
                     
-                    <input type="text" id="lastname" name="lastname" placeholder="Cognome">
+                    <input type="text" id="lastname" name="lastname" placeholder="Cognome" required pattern="[A-Z a-zè'òéàù]{1,30}">
                 </div>
                 
                 <!-- <img src="img/user_default.png" alt="" class="logos"> -->
@@ -38,11 +38,11 @@
             <fieldset class="IN">
                 <legend>E-mail e Password</legend>
                 <div class="pwmail">
-                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
                         
-                    <input type="password" id="pass" name="pass" placeholder="Password">
+                    <input type="password" id="pass" name="pass" placeholder="Password" required>
                         
-                    <input type="password" id="confirm" name="confirm" placeholder="Conferma Password">
+                    <input type="password" id="confirm" name="confirm" placeholder="Conferma Password" required>
                 </div>  
                 
                 <!-- <img src="img/pngegg.png" alt="" class="logos"> -->
