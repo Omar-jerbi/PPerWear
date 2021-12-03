@@ -53,13 +53,13 @@
                     <div class="pantaloni">
                         Che misura di pantaloni porti?
                         <select name="misura_pantaloni" id="misura_pantaloni">
-                            <option value="0">Scegli il range di misure</option>
+                            <option value="0">Scegli la misura</option>
                             <option value="-1"><30</option>
-                            <option value="3040">30-40</option>
-                            <option value="4050">40-50</option>
-                            <option value="5060">50-60</option>
-                            <option value="6070">60-70</option>
-                            <option value="7080">70-80</option>
+                            <?php
+                                for($i = 31; $i<80; $i++){
+                                    echo "<option value=".$i.">".$i."</option>";
+                                }
+                            ?>
                             <option value="1">>80</option>
                         </select>
                     </div>
@@ -68,14 +68,14 @@
                     <div class="scarpe">
                         Che misura di scarpe porti?
                         <select name="misura_scarpe" id="misura_scarpe">
-                            <option value="0">Scegli il range di misure</option>
+                            <option value="0">Scegli la misura</option>
                             <option value="-1"><30</option>
-                            <option value="3035">30-35</option>
-                            <option value="3538">35-38</option>
-                            <option value="3841">38-41</option>
-                            <option value="4143">41-43</option>
-                            <option value="4346">43-46</option>
-                            <option value="1">>46</option>
+                            <?php
+                                for($i = 31; $i<50; $i++){
+                                    echo "<option value=".$i.">".$i."</option>";
+                                }
+                            ?>
+                            <option value="1">>50</option>
                         </select>
                     </div>
 

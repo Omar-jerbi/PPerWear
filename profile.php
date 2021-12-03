@@ -23,32 +23,32 @@
 
     <div class="maincontent">
 
-    <div class="greetings">
-        Ciao <?php echo ucwords($_SESSION["firstname"]);?>! Questi sono i dati che ci hai fornito. <br>
-        Ricorda che puoi cambiarli in qualsiasi momento aggiornando il tuo profilo!
-    </div>
+        <div class="greetings">
+            Ciao <?php echo ucwords($_SESSION["firstname"]);?>! Questi sono i dati che ci hai fornito. <br>
+            Ricorda che puoi cambiarli in qualsiasi momento aggiornando il tuo profilo!
+        </div>
 
-        <form action="" method="get">
-            <div class="name">    
-                Nome: <input type="text" name="cc" id="" disabled placeholder=" <?php echo $_SESSION["firstname"]; ?> ">
-            </div>
+            
+        <div class="name">    
+            Nome: <input type="text" disabled placeholder=" <?php echo $_SESSION["firstname"]; ?> ">
+        </div>
 
-            <div class="lastname">
-                Cognome: <input type="text" name="cc" id="" disabled placeholder=" <?php echo $_SESSION["lastname"]; ?> ">
-            </div>
+        <div class="lastname">
+            Cognome: <input type="text" disabled placeholder=" <?php echo $_SESSION["lastname"]; ?> ">
+        </div>
 
-            <div class="email">
-                Email: <input type="text" name="cc" id="" disabled placeholder=" <?php echo $_SESSION["email"]; ?> ">
-            </div>
+        <div class="email">
+            Email: <input type="text" disabled placeholder=" <?php echo $_SESSION["email"]; ?> ">
+        </div>
 
-            <?php 
-                if(isset($_SESSION["tel"])){
-                    include("profileext.php");
-                }else{
-                    echo "<h2>Sembra che non ci hai comunicato alcune informazioni essenziali. Aggiungile aggiornando il tuo profilo!</h2>";
-                }
-            ?>
-        </form>
+        <?php 
+            if(isset($_SESSION["tel"])){
+                include("profileext.php");
+            }else{
+                echo "<h2>Sembra che non ci hai comunicato alcune informazioni essenziali. Aggiungile aggiornando il tuo profilo!</h2>";
+            }
+        ?>
+        
 
 
     </div>

@@ -1,15 +1,15 @@
 <li>
-    <h1>m1</h1>
+    <img src="img/maglia1.jpg" alt="maglia1">
+    <input type="radio" name="magliascelta" id="magliascelta" value="img/maglia1.jpg" checked>
+
 </li>
+
 <li>
-    <h1>m2</h1>
+    <img src="img/maglia2.jpg" alt="maglia2">
+    <input type="radio" name="magliascelta" id="magliascelta" value="img/maglia2.jpg">
 </li>
+
 <li>
-    <h1>m3</h1>
-</li>
-<li>
-    <h1>m4</h1>
-</li>
-<li>
-    <h1>m5</h1>
+    <img src="img/maglia3.jpg" alt="maglia3">
+    <input type="radio" name="magliascelta" id="magliascelta" value="img/maglia3.jpg">
 </li>
