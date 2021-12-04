@@ -1,4 +1,9 @@
 <?php
+    if(!isset($_POST["magliascelta"])){//quando si accede a questo file direttamnete tramite l'url
+        header("Location: ../_index.php");    
+        exit;
+    }
+    
     $ms = $_POST["magliascelta"];
     $ps = $_POST["pantalonescelto"];
     $ss = $_POST["scarpascelta"];

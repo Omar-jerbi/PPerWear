@@ -1,4 +1,9 @@
 <?php
+    if(!isset($_POST["misura_maglie"])){//quando si accede a questo file direttamnete tramite l'url
+        header("Location: ../_index.php");    
+        exit;
+    }
+
     session_start();
     if(!isset($_SESSION["login"])){
         echo '

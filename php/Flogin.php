@@ -1,4 +1,9 @@
 <?php
+    if(!isset($_POST["email"])){//quando si accede a questo file direttamnete tramite l'url
+        header("Location: ../_index.php");    
+        exit;
+    }
+
     session_start();
     if(isset($_SESSION["login"])){
         echo '
@@ -34,9 +39,9 @@
             </script>';
             header("refresh:0; url= ../login.php");
         }else{
-            session_start();
             
             $_SESSION["login"] = true;
+            $_SESSION["idutente"] = $arr[0];
             $_SESSION["firstname"] = $arr[1];
             $_SESSION["lastname"] =$arr[2];
             $_SESSION["email"] = $arr[3];

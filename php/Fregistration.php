@@ -1,10 +1,16 @@
 <?php
+    if(!isset($_POST["firstname"])){//quando si accede a questo file direttamnete tramite l'url
+        header("Location: ../_index.php");    
+        exit;
+    }
+    
     include_once("../db/connection.php");//$connection
 
     $f = mysqli_real_escape_string($connection, strtolower(trim($_POST["firstname"])));
     $l = mysqli_real_escape_string($connection, strtolower(trim($_POST["lastname"])));
     $m = mysqli_real_escape_string($connection ,strtolower(trim($_POST["email"])));
     $pw =  password_hash((trim($_POST["pass"])), PASSWORD_DEFAULT);
+
 
 
     $stmt = mysqli_prepare($connection, "SELECT * from utenti where email = ?");
@@ -25,6 +31,7 @@
 
         session_start();
         
+        $_SESSION["idutente"] = mysqli_insert_id($connection);
         $_SESSION["login"] = true;
         $_SESSION["firstname"] = $_POST["firstname"];
         $_SESSION["lastname"] = $_POST["lastname"] ;

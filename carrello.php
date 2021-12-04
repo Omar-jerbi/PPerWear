@@ -11,6 +11,11 @@
         width: 200px;
         height: 200px;
     }
+
+    .carrellovuoto{
+        width: 500px;
+        height: auto;       
+    }
 </style>
 
 
@@ -23,8 +28,9 @@
 
         <?php
             if(!isset($_COOKIE["carrello"])){
-                echo "carrello vuoto";
-                //aggiungi roba carina
+
+                include("carrellovuoto.php");
+
                 include("common/footer.php");
                 exit;
             }
@@ -46,7 +52,18 @@
             <img src="<?php echo $_COOKIE['scarpascelta']  ?>" alt="">
         </div>
 
-            <a href="conferma.php">Conferma!</a>
+        <?php
+            if(isset($_SESSION["login"])){
+                if(isset($_SESSION["misura_pantaloni"])){
+                    echo'<a href="conferma.php">Conferma!</a>'; //utente loggato con tutte le info
+                }else{
+                    echo"<h3>Aggiorna il tuo profilo per confermare l'ordine</h3>";
+                }
+            }else{
+                echo"<h3>Per confermare la tua selezione devi prima fare il login!</h3>";
+            }
+        ?>
+            
 
 
     </div>

@@ -11,6 +11,12 @@
         $_SESSION = array();
         session_destroy();
 
+        
+        setcookie("carrello", "", time() - 3600, '/');
+        setcookie("magliascelta", "", time() - 3600, '/');
+        setcookie("pantalonescelto", "", time() - 3600, '/');
+        setcookie("scarpascelta", "", time() - 3600, '/');
+
         echo '
         <script>
             alert("Verrai reindirizzato alla home come utente non registrato");
