@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Categorie</title>
-    <script src="js/addcategoriemaglie.js"></script>
+    <script src="../js/addcategoriecat.js"></script>
 </head>
 <body>
     <?php
-        include("common/header.php");
+        include("../common/header.php");
     ?>
 
     <div class="maincontent">
         <ul class="maincategorie">
             <li id="maglie" onmouseover="addcategorie('magliehidden')" onmouseout="remcategorie('magliehidden')">Maglie
                 <ul id="magliehidden" hidden>
-                    <li>Tshirt</li>
-                    <li>Maglioni</li>
-                    <li>Camicie</li>
+                    <li><a href="tshirt.php">Tshirt</a></li>
+                    <li><a href="maglioni.php">Maglioni</a></li>
+                    <li><a href="camicie.php">Camicie</a></li>
                 </ul>
 
             </li>
             <li id="pantaloni" onmouseover="addcategorie('pantalonihidden')" onmouseout="remcategorie('pantalonihidden')">Pantaloni
                 <ul id="pantalonihidden" hidden>
-                    <li>Jeans</li>
-                    <li>Chino</li>
-                    <li>Bermuda</li>
+                    <li><a href="jeans.php">Jeans</a></li>
+                    <li><a href="chino.php">Chino</a></li>
+                    <li><a href="bermuda.php">Bermuda</a></li>
                 </ul>
 
 
             </li>
             <li id="scarpe" onmouseover="addcategorie('scarpehidden')" onmouseout="remcategorie('scarpehidden')">Scarpe
                 <ul id="scarpehidden" hidden>
-                    <li>Sneakers</li>
-                    <li>Stivali</li>
-                    <li>Mocassini</li>
+                    <li><a href="sneakers.php">Sneakers</a></li>
+                    <li><a href="stivali.php">Stivali</a></li>
+                    <li><a href="mocassini.php">Mocassini</a></li>
                 </ul>
 
  
@@ -42,7 +42,7 @@
     </div>
 
     <?php
-        include("common/footer.php");
+        include("../common/footer.php");
     ?>   
 </body>
 </html>

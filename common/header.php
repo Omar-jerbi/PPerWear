@@ -46,7 +46,7 @@
     <div class="menu_navigazione">
         <ul>
             <li><a href="/sawproject/novita.php">Novità/Speciali</a></li>
-            <li><a href="/sawproject/categorie.php">Naviga per categoria</a></li>
+            <li><a href="/sawproject/navigazione/categorie.php">Naviga per categoria</a></li>
             <li><a href="/sawproject/carrello.php">Carrello</a></li>
         </ul>
     </div>
