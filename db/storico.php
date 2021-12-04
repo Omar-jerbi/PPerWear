@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>PayPerWear -Storico</title>
 </head>
+
+
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+
 <body>
     <?php
         error_reporting(E_ALL & ~E_NOTICE);//non visualizza warning della session_start() duplicata
@@ -13,7 +23,7 @@
             <script>
             alert("PRIMA DEVI FARE IL LOGIN");
             </script>';
-            header("refresh:0; url= /sawproject/_index.php");
+            header("refresh:0; url= ../_index.php");
             exit;
         }
         
@@ -23,7 +33,7 @@
     <div class="maincontent">
         <?php
             if(!isset($_SESSION["idutente"])){
-                echo "Aggiorna il tuo profilo per iniziare ad usufruire di tutti i servizi PayPerWear!";
+                echo "<h1>Aggiorna il tuo profilo per iniziare ad usufruire di tutti i servizi PayPerWear!</h1>";
                 include("../common/footer.php");
                 exit;
             }
@@ -38,19 +48,38 @@
                 mysqli_stmt_execute($stmt);
                 $res = mysqli_stmt_get_result($stmt);
                 
+                $i = 0;
                 while(1){
-                    $arrordinidate = mysqli_fetch_array($res);//controlla che non sia null
-                    if(!$arrordinidate) break;
+                    $arrordinidate = mysqli_fetch_array($res);
+                    if(!$arrordinidate) {
+                        if($i == 0){
+                            echo "<h1>Non hai ancora fatto nessun ordine</h1>";
+                        }
+                        break;
+                    }
+                    $i++;
 
-                    //cicla su [0] == numordine -> fai una select su urdini con quel numero ordine e 
-                    //estrai la stringa relativa agli articoli dell'ordine
-                    //splittala e fai img src con ogni pezzo della string
+                    $stmt2 = mysqli_prepare($connection, "SELECT `articoli` FROM `ordini` WHERE `idordine` = ?");
+                    mysqli_stmt_bind_param($stmt2, 'i', $arrordinidate[0]);
+                    mysqli_stmt_execute($stmt2);
+                    $resart = mysqli_stmt_get_result($stmt2);
+                    $articoli = mysqli_fetch_array($resart);
+
+                    $arrayarticoli = explode('|', $articoli[0]);
+
+                    echo '
+                    <li>
+                        <h1>DATA ORDINE: '.$arrordinidate[1].'</h1>
+                        <img src=../'.$arrayarticoli[0].' alt="a1">
+                        <img src=../'.$arrayarticoli[1].' alt="a2">
+                        <img src=../'.$arrayarticoli[2].' alt="a3">
+                    </li>'
+                    ;
                 }
 
-                //echo $arrordinidate[0]."<br>";
-                //echo $arrordinidate[1];
             ?>
         </ul>
+
 
 
     </div>

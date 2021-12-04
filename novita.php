@@ -28,7 +28,7 @@
 
     <div class="maincontent">
         <form action="php/Fselezionearticoli.php" method="post">
-            <h1>Seleziona un articolo per ogni categoria</h1>
+            <h1>Selezione di Wears speciali per questo periodo speciale</h1>
 
                 <ul class="maglie">
                     <h1>Scegli una maglia!</h1>

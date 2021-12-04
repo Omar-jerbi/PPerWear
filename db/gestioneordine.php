@@ -1,4 +1,9 @@
 <?php
+    if(!isset($_COOKIE["magliascelta"])){//quando si accede a questo file direttamnete tramite l'url
+        header("Location: ../_index.php");    
+        exit; 
+    }
+
     $stringdainserire = $_COOKIE["magliascelta"]."|".$_COOKIE['pantalonescelto']."|".$_COOKIE['scarpascelta'];
 
     include("connection.php");

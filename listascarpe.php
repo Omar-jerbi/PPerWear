@@ -5,7 +5,7 @@
 </li>
 
 <li>
-    <img src="img/scarpa2.jpeg" alt="scarpa2">
+    <img src="img/scarpa2.jpg" alt="scarpa2">
     <input type="radio" name="scarpascelta" id="scarpascelta" value="img/scarpa2.jpeg">
 </li>
 
