@@ -39,17 +39,20 @@
         <div class="maglia">
             <h2>La maglia che riceverai questo mese:</h2>
             <img src="<?php echo $_COOKIE['magliascelta']  ?>" alt="">
+            <h3>Taglia: <?php echo $_COOKIE['misuramaglia']?></h3>
         </div>
         
 
         <div class="pantalone">
             <h2>I pantaloni che riceverai questo mese:</h2>
             <img src="<?php echo $_COOKIE['pantalonescelto']  ?>" alt="">
+            <h3>Taglia: <?php echo $_COOKIE['misurapantaloni']?></h3>
         </div>
 
         <div class="scarpa">
             <h2>Le scarpe che riceverai questo mese:</h2>
             <img src="<?php echo $_COOKIE['scarpascelta']  ?>" alt="">
+            <h3>Taglia: <?php echo $_COOKIE['misurascarpe']?></h3>
         </div>
 
         <?php
