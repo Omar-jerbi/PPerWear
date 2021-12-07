@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Novità</title>
+    <script src="js/validateSpecialSelection.js"></script>
 </head>
 
 <style>
@@ -27,14 +28,14 @@
     ?>
 
     <div class="maincontent">
-        <form action="php/Fselezionearticoli.php" method="post">
+        <form action="php/Fselezionearticoli.php" method="post" onsubmit="return validateSpecialSelection()">
             <h1>Selezione di Wears speciali per questo periodo speciale</h1>
 
                 <ul class="maglie">
                     <h1>Scegli una maglia!</h1>
                     <?php 
-                        include("listamaglienovita.php");
-                    ?>
+                       include("listamaglienovita.php");
+                    ?> 
                 </ul>
 
                 <ul class="pantaloni">

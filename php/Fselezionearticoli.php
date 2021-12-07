@@ -8,10 +8,21 @@
     $ps = $_POST["pantalonescelto"];
     $ss = $_POST["scarpascelta"];
     
-    $tagliams = $_POST["misuramaglia"];
-    $tagliaps = $_POST["misurapantaloni"];
-    $tagliass = $_POST["misurascarpe"];
+    //echo  $_POST["img/maglia1_jpg"]; 
+    ///////IMPORTANTISSIMO " . " in name -> " _ "
+    //es ...name="aa.jpg"   --->  $_POST["aa_jpg"]
     
+    $ValOFms = str_replace(".", "_", $ms);
+    $ValOFps = str_replace(".", "_", $ps);
+    $ValOFss = str_replace(".", "_", $ss);
+
+
+    $tagliams = $_POST[$ValOFms];
+    $tagliaps = $_POST[$ValOFps];
+    $tagliass = $_POST[$ValOFss];
+    
+
+
     setcookie("carrello", 'pieno', 0 ,'/');
 
     setcookie('magliascelta', $ms, 0, '/');

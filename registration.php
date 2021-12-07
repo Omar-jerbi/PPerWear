@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Registration</title>
-    <script src="js/validateform.js"></script>
+    <script src="js/validateformregistration.js"></script>
+    <script src="js/fetchAPImailverif.js"></script>
 </head>
 <body>
     <?php
@@ -22,7 +23,8 @@
     ?>
 
     <div class="maincontent">
-        <form action="php/Fregistration.php" method="post"onsubmit="return validateForm()">
+        <!-- <form action="php/Fregistration.php" method="post" onsubmit="return validateForm()"> -->
+        <form action="php/Fregistration.php" method="post" onsubmit="return validateForm()">
             <fieldset class="IN">
                 <legend>Nome e Cognome</legend>
                 
@@ -38,7 +40,7 @@
             <fieldset class="IN">
                 <legend>E-mail e Password</legend>
                 <div class="pwmail">
-                    <input type="email" id="email" name="email" placeholder="E-mail" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" onchange="return mailVerif()">
                         
                     <input type="password" id="pass" name="pass" placeholder="Password" required>
                         
@@ -47,7 +49,7 @@
                 
                 <!-- <img src="img/pngegg.png" alt="" class="logos"> -->
 
-                <input class="submit" type="submit" value="Registrati!">
+                <input id="submit" class="submit" type="submit" value="Registrati!">
             </fieldset> 
         </form>
     </div>

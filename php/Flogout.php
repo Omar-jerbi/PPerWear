@@ -17,6 +17,10 @@
         setcookie("pantalonescelto", "", time() - 3600, '/');
         setcookie("scarpascelta", "", time() - 3600, '/');
 
+        setcookie("misuramaglia", "", time() - 3600, '/');
+        setcookie("misurapantaloni", "", time() - 3600, '/');
+        setcookie("misurascarpe", "", time() - 3600, '/');
+
         echo '
         <script>
             alert("Verrai reindirizzato alla home come utente non registrato");
