@@ -59,13 +59,15 @@
                     }
                     $i++;
 
-                    $stmt2 = mysqli_prepare($connection, "SELECT `articoli` FROM `ordini` WHERE `idordine` = ?");
+                    $stmt2 = mysqli_prepare($connection, "SELECT `articoli`, `taglie` FROM `ordini` WHERE `idordine` = ?");
                     mysqli_stmt_bind_param($stmt2, 'i', $arrordinidate[0]);
                     mysqli_stmt_execute($stmt2);
                     $resart = mysqli_stmt_get_result($stmt2);
+                    
                     $articoli = mysqli_fetch_array($resart);
 
                     $arrayarticoli = explode('|', $articoli[0]);
+                    $arraytaglie = explode('|', $articoli[1]);
 
                     echo '
                     <li>
@@ -73,6 +75,11 @@
                         <img src=../'.$arrayarticoli[0].' alt="a1">
                         <img src=../'.$arrayarticoli[1].' alt="a2">
                         <img src=../'.$arrayarticoli[2].' alt="a3">
+                        <h3>'.
+                            ($arraytaglie[0] == "1" ?  "S" : ($arraytaglie[0] == "2" ?  "M" : ($arraytaglie[0] == "3" ?  "L" :  "XL")))
+                        .'</h3>
+                        <h3>'.$arraytaglie[1].'</h3>
+                        <h3>'.$arraytaglie[2].'</h3>
                     </li>'
                     ;
                 }

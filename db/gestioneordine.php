@@ -4,12 +4,13 @@
         exit; 
     }
 
-    $stringdainserire = $_COOKIE["magliascelta"]."|".$_COOKIE['pantalonescelto']."|".$_COOKIE['scarpascelta'];
+    $articolidainserire = $_COOKIE["magliascelta"]."|".$_COOKIE['pantalonescelto']."|".$_COOKIE['scarpascelta'];
+    $tagliedainserire = $_COOKIE["misuramaglia"]."|".$_COOKIE["misurapantaloni"]."|".$_COOKIE["misurascarpe"];
 
     include("connection.php");
 
-    $stmt = mysqli_prepare($connection, "INSERT INTO `ordini` (`idordine`, `articoli`) VALUES (NULL, ?)");
-    mysqli_stmt_bind_param($stmt, 's', $stringdainserire);
+    $stmt = mysqli_prepare($connection, "INSERT INTO `ordini` (`idordine`, `articoli`, `taglie`) VALUES (NULL, ?, ?)");
+    mysqli_stmt_bind_param($stmt, 'ss', $articolidainserire, $tagliedainserire);
     mysqli_stmt_execute($stmt);
     $res = mysqli_stmt_get_result($stmt);
 
@@ -33,6 +34,9 @@
         setcookie("magliascelta", "", time() - 3600, '/');
         setcookie("pantalonescelto", "", time() - 3600, '/');
         setcookie("scarpascelta", "", time() - 3600, '/');
+        setcookie("misuramaglia", "", time() - 3600, '/');
+        setcookie("misurapantaloni", "", time() - 3600, '/');
+        setcookie("misurascarpe", "", time() - 3600, '/');
 
     }
 ?>

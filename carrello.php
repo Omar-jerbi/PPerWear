@@ -39,7 +39,10 @@
         <div class="maglia">
             <h2>La maglia che riceverai questo mese:</h2>
             <img src="<?php echo $_COOKIE['magliascelta']  ?>" alt="">
-            <h3>Taglia: <?php echo $_COOKIE['misuramaglia']?></h3>
+            <h3>Taglia: <?php 
+            echo $_COOKIE['misuramaglia'] == "1" ? "S" : ($_COOKIE['misuramaglia'] == "2" ? "M" : ($_COOKIE['misuramaglia'] == "3" ? "L" : "XL"));
+            ?>
+            </h3>
         </div>
         
 
