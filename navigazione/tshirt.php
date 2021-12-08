@@ -26,21 +26,21 @@
         <?php
             if(!isset($_SESSION["sesso"])){
                 $dir = '../img/maglie/tshirt/1';
-                elementicatalogoBuilder($dir);    
+                elementicatalogoBuilder($dir, "magliascelta");    
                 $dir = '../img/maglie/tshirt/2';
-                elementicatalogoBuilder($dir);  
+                elementicatalogoBuilder($dir, "magliascelta");  
             }else{
                 if($_SESSION["sesso"] == 1){
                     $dir = '../img/maglie/tshirt/1';
-                    elementicatalogoBuilder($dir);
+                    elementicatalogoBuilder($dir, "magliascelta");
                 }elseif($_SESSION["sesso"] == 2){
                     $dir = '../img/maglie/tshirt/2';
-                    elementicatalogoBuilder($dir);
+                    elementicatalogoBuilder($dir, "magliascelta");
                 }else{
                     $dir = '../img/maglie/tshirt/1';
-                    elementicatalogoBuilder($dir);    
+                    elementicatalogoBuilder($dir, "magliascelta");    
                     $dir = '../img/maglie/tshirt/2';
-                    elementicatalogoBuilder($dir);         
+                    elementicatalogoBuilder($dir, "magliascelta");         
                 }
             }
          
