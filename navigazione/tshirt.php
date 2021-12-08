@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -T-shirt</title>
-    <script src="../js/addcategoriecat.js"></script>
+    <script src="../js/validateSelezioneMaglia.js"></script>
 </head>
 
 
@@ -21,7 +21,7 @@
     ?>
 
 <div class="maincontent">
-    <form action="#" method="post">
+    <form action="#" method="post" onsubmit="return validateSelezioneMaglia()">
         <ul>
         <?php
             if(!isset($_SESSION["sesso"])){
@@ -43,8 +43,8 @@
                     elementicatalogoBuilder($dir, "magliascelta");         
                 }
             }
-         
         ?>
+        <input type="submit" value="Aggiungi articolo al carrello!">
         </ul>
     </form>
     

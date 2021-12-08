@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Camicie</title>
-    <script src="../js/addcategoriecat.js"></script>
+    
 </head>
 
 <style>
