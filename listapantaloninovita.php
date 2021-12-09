@@ -1,6 +1,6 @@
 <li>
     <img src="img/pantalone1.jpg" alt="pantalone1">
-    <input type="radio" name="pantalonescelto" id="pantalonescelto" value="img/pantalone1.jpg" checked>
+    <input type="radio" name="pantalonescelto" id="pantalonescelto" value="img/pantalone1.jpg">
     <select name="img/pantalone1.jpg" id="img/pantalone1.jpg">
         <option value="0">Scegli la misura</option>
         <option value="-1"><30</option>

@@ -25,9 +25,10 @@ function validateSpecialSelection(){
     }
 
 
-    if(misuraScarpascelta == "0" ||misuraPantalonescelto == "0" || misuraMagliascelta == "0"){
+    /*if(misuraScarpascelta == "0" ||misuraPantalonescelto == "0" || misuraMagliascelta == "0"){
         alert("Assicurati di avere scelto la misura!");
         return false;
-    }
+    }*/
+    return true;
 
 }

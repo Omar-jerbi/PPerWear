@@ -1,6 +1,6 @@
 <li>
     <img src="img/maglia1.jpg" alt="maglia1">
-    <input type="radio" name="magliascelta" id="magliascelta" value="img/maglia1.jpg" checked>
+    <input type="radio" name="magliascelta" id="magliascelta" value="img/maglia1.jpg">
     <select name="img/maglia1.jpg" id="img/maglia1.jpg">
         <option value="0">Scegli la misura</option>
         <option value="1">S</option>
