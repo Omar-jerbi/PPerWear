@@ -23,11 +23,30 @@
 
     <div class="maincontent">
         <h1>Stiamo elaborando la tua richiesta...</h1>
+        <h1>...</h1>
         <h1>..</h1>
         <h1>.</h1>
-        
+        <br>
+        <br>
         <?php
-        include("db/gestioneordine.php");
+            $i = 0;
+            if(!isset($_COOKIE["magliascelta"])){
+                $i++;
+                echo '<h1>Non hai selezionato nessuna maglia</h1>';
+            }
+            
+            if(!isset($_COOKIE["pantalonescelto"])){
+                $i++;
+                echo '<h1>Non hai selezionato nessun pantalone</h1>';
+            }
+            
+            if(!isset($_COOKIE["scarpascelta"])){
+                $i++;
+                echo '<h1>Non hai selezionato nessun paio di scarpe</h1>';
+            }
+
+            if($i == 0)
+                include("db/gestioneordine.php");
         ?>
     </div>
     
