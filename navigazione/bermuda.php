@@ -5,13 +5,47 @@
     <title>PayPerWear -Bermuda</title>
     <script src="../js/addcategoriecat.js"></script>
 </head>
+
+<style>
+    img{
+        height: 500px;
+        width: 400px;
+    }
+</style>
+
 <body>
     <?php
+        include("../php/FvarieAux.php");
         include("../common/header.php");
     ?>
 
     <div class="maincontent">
-
+    <form action="../php/Fselezionearticoli.php" method="post">
+        <ul>
+        <?php
+            if(!isset($_SESSION["sesso"])){
+                $dir = '../img/pantaloni/bermuda/1';
+                elementicatalogoBuilder($dir, "pantalonescelto");    
+                $dir = '../img/pantaloni/bermuda/2';
+                elementicatalogoBuilder($dir, "pantalonescelto");  
+            }else{
+                if($_SESSION["sesso"] == 1){
+                    $dir = '../img/pantaloni/bermuda/1';
+                    elementicatalogoBuilder($dir, "pantalonescelto");
+                }elseif($_SESSION["sesso"] == 2){
+                    $dir = '../img/pantaloni/bermuda/2';
+                    elementicatalogoBuilder($dir, "pantalonescelto");
+                }else{
+                    $dir = '../img/pantaloni/bermuda/1';
+                    elementicatalogoBuilder($dir, "pantalonescelto");    
+                    $dir = '../img/pantaloni/bermuda/2';
+                    elementicatalogoBuilder($dir, "pantalonescelto");         
+                }
+            }
+        ?>
+        <input type="submit" value="Aggiungi articolo al carrello!">
+        </ul>
+    </form>
     </div>
 
     <?php
