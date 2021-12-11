@@ -22,7 +22,7 @@
     ?>
 
     <div class="maincontent">
-    <form action="#" method="post">
+    <form action="../php/Fselezionearticoli.php" method="post">
             <ul>
             <?php
                 if(!isset($_SESSION["sesso"])){
@@ -46,6 +46,7 @@
                 }
             
             ?>
+            <input type="submit" value="Aggiungi articolo al carrello!">
             </ul>
         </form>
     </div>

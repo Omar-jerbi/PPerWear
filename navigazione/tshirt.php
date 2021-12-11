@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -T-shirt</title>
-    <script src="../js/validateSelezioneMaglia.js"></script>
 </head>
 
 
@@ -21,7 +20,7 @@
     ?>
 
 <div class="maincontent">
-    <form action="#" method="post" onsubmit="return validateSelezioneMaglia()">
+    <form action="../php/Fselezionearticoli.php" method="post">
         <ul>
         <?php
             if(!isset($_SESSION["sesso"])){
