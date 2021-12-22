@@ -6,7 +6,7 @@ function validate(x){
     var tel = document.getElementById("tel").value;
     var addr1 = document.getElementById("addr1").value;
     var addr2 = document.getElementById("addr2").value;
-    var addr3 = document.getElementById("addr2").value;
+    var addr3 = document.getElementById("addr3").value;
 
         
     if(parseInt(mm) == 0 || parseInt(ms) == 0 || parseInt(mp) == 0 || tel == '' || addr1 == ''|| addr2 == ''|| addr3 == ''){
@@ -24,9 +24,9 @@ function validate(x){
         return false;
     }
 
-    var arr = addr1.split('/');
+    var arr1 = addr1.split('/');
 
-    if(arr.length != 2){
+    if(arr1.length != 2){
         alert("Città e provincia devono essere esparate dal carattere /");
         document.getElementById("addr1").value = document.getElementById("addr1").ariaPlaceholder;
         return false;

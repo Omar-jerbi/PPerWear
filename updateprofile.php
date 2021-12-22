@@ -89,7 +89,7 @@
                         Il tuo indirizzo:
                         <input type="text" name="addr1" id="addr1" placeholder="Città/Provincia" size = "15">
                         <input type="text" name="addr2" id="addr2" placeholder="CAP" size = "6">
-                        <input type="text" name="addr3" id="addr3" placeholder="Via/Numero Civico" size = "20">
+                        <input type="text" name="addr3" id="addr3" placeholder="Via/Numero Civico" size = "25">
                     </div>
                     
                     <div class="pagamento">

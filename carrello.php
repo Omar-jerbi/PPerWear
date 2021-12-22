@@ -73,7 +73,7 @@
                 if(isset($_COOKIE["misurascarpe"])&&$_COOKIE["misurascarpe"] == "0" ||isset($_COOKIE["misuramaglia"])&&$_COOKIE['misuramaglia'] == "0" ||isset($_COOKIE["misurapantaloni"])&&$_COOKIE["misurapantaloni"] == "0"){
                     echo"<h3>Assicurati di aver inserito la misura per ogni articolo selezionato</h3>";    
                 }else{
-                    echo'<a href="conferma.php">Conferma!</a>';  //OK!
+                    echo'<a id="OK" href="conferma.php" onmouseover="return checkLastOrder()">Continua!</a>';  //OK!
                 }
             }else{
                 echo"<h3>Aggiorna il tuo profilo per confermare l'ordine</h3>";
@@ -84,7 +84,6 @@
     ?>
                        
 </div>
-        
     <?php
     include("common/footer.php");
     ?>   
@@ -92,7 +91,7 @@
 </body>
 
 <script src="js/addButtonCarrello.js"></script>
+<script src="js/fetchAPILastOrderVerif.js"></script>
 
 </html>
-
 

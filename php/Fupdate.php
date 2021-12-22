@@ -21,8 +21,22 @@
     $mp = mysqli_real_escape_string($connection, strtolower(trim($_POST["misura_pantaloni"])));
     $ms = mysqli_real_escape_string($connection ,strtolower(trim($_POST["misura_scarpe"])));
     $tel = mysqli_real_escape_string($connection ,strtolower(trim($_POST["tel"])));
-    $addr = mysqli_real_escape_string($connection ,strtolower(trim($_POST["addr"])));
+    $addr1 = mysqli_real_escape_string($connection ,strtolower(trim($_POST["addr1"])));
+    $addr2 = mysqli_real_escape_string($connection ,strtolower(trim($_POST["addr2"])));
+    $addr3 = mysqli_real_escape_string($connection ,strtolower(trim($_POST["addr3"])));
     $s = $_POST["sesso"];
+
+
+    //input check
+    if(!isset($mm)||!isset($mp)||!isset($ms)||!isset($tel) ||!isset($addr1)||!isset($addr2)||!isset($addr3)||!isset($s)){
+        echo '<script>
+        alert("ERRORE");
+        </script>';
+        header("refresh:0; url= ../updateprofile.php");
+    }
+
+
+    $addr = $addr1.'/'.$addr2.'/'.$addr3;
 
     $stmt = mysqli_prepare($connection, "UPDATE `utenti` SET `sesso` = ?, `misura_pantaloni` = ?, `misura_scarpe` = ?, `misura_maglie` = ?, `tel` = ?, `addr` = ? WHERE `email` = ?");
     $sint = intval($s);
@@ -41,6 +55,7 @@
             header("refresh:0; url= ../updateprofile.php");
     }else{
 
+        //cookie di sessione con informazioni dell'utente -> da usare per navigazione
         $_SESSION["sesso"] = $sint; 
         $_SESSION["misura_pantaloni"] = $mpint;
         $_SESSION["misura_scarpe"] = $msint;

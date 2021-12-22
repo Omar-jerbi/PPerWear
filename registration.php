@@ -23,7 +23,6 @@
     ?>
 
     <div class="maincontent">
-        <!-- <form action="php/Fregistration.php" method="post" onsubmit="return validateForm()"> -->
         <form action="php/Fregistration.php" method="post" onsubmit="return validateForm()">
             <fieldset class="IN">
                 <legend>Nome e Cognome</legend>
