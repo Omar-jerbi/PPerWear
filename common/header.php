@@ -2,8 +2,8 @@
     <nav>
     <ul>
         <li>
-            <form action="" method="get">
-                <input type="text" name="search" id="search" value="Ricerca">
+            <form action="/sawproject/ricerca.php" method="get">
+                <input type="text" name="search" id="search" placeholder="Ricerca">
             </form>
         </li>
         <li>

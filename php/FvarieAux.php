@@ -7,20 +7,43 @@
         return array_values($content); //resetta gli indice dell'array cos' parte da 0
     }
 
-    function selectBuilder($tipo, $partdir, $mydir, $i){
-        if($tipo == 'magliascelta')
-        echo'    
-        <select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].'>
-            <option value="0">Scegli la misura</option>
-            <option value="1">S</option>
-            <option value="2">M</option>
-            <option value="3">L</option>
-            <option value="4">XL</option>
-        </select>';
+   
+
+    function selectBuilder($tipo, $partdir, $mydir, $i, ?string $tot = null){//tot = directory già pronta, utilizzato in ricerca.php
+        if($tipo == 'magliascelta'){
+            if($tot == null){
+                echo'    
+                <select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].'>
+                ';
+            }else{
+                echo'
+                <select name='.$tot.' id='.$tot.'>
+                ';
+            }
+    
+            echo'
+                <option value="0">Scegli la misura</option>
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+                <option value="4">XL</option>
+            </select>';
+        }
+        
 
 
         if($tipo == 'scarpascelta'){
-            echo '<select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].'>
+            if($tot == null){
+                echo'    
+                <select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].'>
+                ';
+            }else{
+                echo'
+                <select name='.$tot.' id='.$tot.'>
+                ';
+            }
+                
+            echo'
                 <option value="0">Scegli la misura</option>
                 <option value="-1"><30</option>
                 ';
@@ -33,7 +56,16 @@
 
 
         if($tipo == 'pantalonescelto'){
-            echo '<select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].'>
+            if($tot == null){
+                echo'    
+                <select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].'>
+                ';
+            }else{
+                echo'
+                <select name='.$tot.' id='.$tot.'>
+                ';
+            }
+            echo'
                 <option value="0">Scegli la misura</option>
                 <option value="-1"><30</option>
                 ';
@@ -44,7 +76,6 @@
             </select>';
         }
     }
-
 
 
 
