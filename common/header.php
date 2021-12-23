@@ -47,7 +47,9 @@
         <ul>
             <li><a href="/sawproject/novita.php">Novità/Speciali</a></li>
             <li><a href="/sawproject/navigazione/categorie.php">Naviga per categoria</a></li>
-            <li><a href="/sawproject/carrello.php">Carrello</a></li>
+            <li><a href="/sawproject/carrello.php?controllodata=si">Carrello</a></li>
+            <!-- controllodata = si :  un ordine ogni 25 giorni-->
+            <!-- controllodata = no :  no controllo data ultimo ordine-->
         </ul>
     </div>
 </header>
