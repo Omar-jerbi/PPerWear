@@ -28,20 +28,9 @@
             Ricorda che puoi cambiarli in qualsiasi momento aggiornando il tuo profilo!
         </div>
 
-            
-        <div class="name">    
-            Nome: <input type="text" disabled placeholder=" <?php echo $_SESSION["firstname"]; ?> ">
-        </div>
-
-        <div class="lastname">
-            Cognome: <input type="text" disabled placeholder=" <?php echo $_SESSION["lastname"]; ?> ">
-        </div>
-
-        <div class="email">
-            Email: <input type="text" disabled placeholder=" <?php echo $_SESSION["email"]; ?> ">
-        </div>
-
         <?php 
+            include("show_profile.php");
+            
             if(isset($_SESSION["tel"])){
                 include("profileext.php");
             }else{

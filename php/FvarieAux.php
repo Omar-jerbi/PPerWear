@@ -13,11 +13,11 @@
         if($tipo == 'magliascelta'){
             if($tot == null){
                 echo'    
-                <select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].'>
+                <select name='.$partdir.'/'.$mydir[$i].' id='.$partdir.'/'.$mydir[$i].' title="s2">
                 ';
             }else{
                 echo'
-                <select name='.$tot.' id='.$tot.'>
+                <select name='.$tot.' id='.$tot.' title="s2">
                 ';
             }
     

@@ -14,10 +14,10 @@
                 session_start();
                     //$_SESSION["login"] = true;
                 if(isset($_SESSION["login"])){
-                    echo '<a href= "/sawproject/profile.php">Profilo</a>';
+                    echo '<a href= "/sawproject/showprofile.php">Profilo</a>';
                 }       
                 else
-                    echo '<a href="/sawproject/login.php">Login</a>';
+                    echo '<a href="/sawproject/formlogin.php">Login</a>';
             ?>
         </li>
     </ul>
@@ -37,7 +37,7 @@
                         <li><a href="/sawproject/php/Flogout.php">Logout</a></li>
                     ';
                 }else{
-                    echo '<li><a href="/sawproject/registration.php">Entra nel mondo PayPerWear!</a></li>';
+                    echo '<li><a href="/sawproject/formregistration.php">Entra nel mondo PayPerWear!</a></li>';
                 }
             ?>
         </ul>

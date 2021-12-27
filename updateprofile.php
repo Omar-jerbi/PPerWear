@@ -29,6 +29,12 @@
             <legend>Aggiorna i Tuoi Dati</legend>
             <div class="inputs">
                 
+                <div class="gener">
+                    Generalità:<input placeholder="Nome" type="text" name="firstname" id="firstname" required pattern="[A-Z a-zè'òéàù]{1,30}">
+                    <input placeholder="Cognome" type="text" name="lastname" id="lastname" required pattern="[A-Z a-zè'òéàù]{1,30}">
+                    <input placeholder="E-mail" type="email" name="lastname" id="lastname" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                </div>
+                
                 <div class="sesso">
                     Sesso:
                     Altro<input type="radio" name="sesso" id="sesso" value="0" checked>
@@ -100,7 +106,7 @@
                     </div>
                 </div>
                 
-                <input class="submit" type="submit" value="Modifica!">
+                <input class="submit" name="submit" type="submit" value="Modifica!">
             </fieldset>
             
             

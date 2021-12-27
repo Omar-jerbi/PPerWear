@@ -5,6 +5,8 @@
     <title>PayPerWear -Index</title>
     <link rel="stylesheet" href="css/general.css">
 </head>
+
+
 <body>
     <?php
         include("common\header.php");

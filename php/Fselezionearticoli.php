@@ -35,5 +35,5 @@
     if($ps != null)setcookie('misurapantaloni', $tagliaps, 0, '/');
     if($ss != null)setcookie('misurascarpe', $tagliass, 0, '/');
 
-    header("Location: ../carrello.php");
+    header("Location: ../carrello.php?controllodata=si");
 ?>

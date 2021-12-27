@@ -33,21 +33,21 @@
                 <ul class="maglie">
                     <h1>Scegli una maglia!</h1>
                     <?php 
-                       include("listamaglienovita.php");
+                       include("navigazione/listamaglienovita.php");
                     ?> 
                 </ul>
 
                 <ul class="pantaloni">
                     <h1>Scegli un paio di pantaloni!</h1>
                     <?php
-                        include("listapantaloninovita.php")
+                        include("navigazione/listapantaloninovita.php")
                     ?>
                 </ul>
 
                 <ul class="scarpe">
                     <h1>Scegli un paio di scarpe!</h1>
                     <?php 
-                        include("listascarpenovita.php")
+                        include("navigazione/listascarpenovita.php")
                     ?>
                 </ul>
 
