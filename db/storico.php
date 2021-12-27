@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Storico</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 
 

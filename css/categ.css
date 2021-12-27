@@ -1,0 +1,17 @@
+.maincategorie{
+    background-color:antiquewhite;
+    width:100%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#maglie , #pantaloni, #scarpe{
+    padding:100px;
+    text-align:center;
+}
+
+#magliehidden > li , #pantalonihidden > li , #scarpehidden > li{
+    display: inline-block;
+    margin:20px 10%;
+}
+

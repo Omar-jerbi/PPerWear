@@ -1,0 +1,35 @@
+
+.box1{
+    display: flex;
+}
+
+.desc1{
+    background-color: #f7f2f5;
+    padding: 10px;
+}
+
+.box2{
+    display: flex;
+}
+
+.desc2{
+    background-color: #e4d4dd;
+    padding: 10px;
+}
+.box3{
+    display: flex;
+}
+
+.desc3{
+    background-color: #d1b6c5;
+    padding: 10px;
+}
+
+.box4{
+    display: flex;
+}
+
+.desc4{
+    background-color: #be98ad;
+    padding: 10px;
+}

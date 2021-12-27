@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Login</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <?php
@@ -23,7 +27,7 @@
 
 
     <div class="maincontent">
-        <form action="php/Flogin.php" method="POST">
+        <form class="formlogin" action="php/Flogin.php" method="POST">
             <fieldset class="IN">
                 <legend>Login</legend>
                 <div class="pwmail">

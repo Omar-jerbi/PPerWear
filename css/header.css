@@ -1,0 +1,73 @@
+header > nav > ul > li{
+    display:inline-block
+}
+
+.titolo_principale{
+    text-align: center;
+    font-size: xxx-large;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #968809;
+}
+
+.r > form > input{
+    width: 250%;
+    height: 25px;
+    font-size: larger;
+}
+
+.pl{
+    float:right;
+    margin:10px 5%;    
+}
+
+.h{
+    float:right;
+    margin:10px 5%;
+}
+
+.pl , .h{
+    font-size: larger;
+}
+
+.menu_azioni{
+    background-color:red;
+    padding-top:1px;
+    padding-bottom:9px;
+    text-align:center;
+    font-size:x-large;
+}
+
+.menu_azioni > ul > li {
+    display: inline-block;
+    margin:1%
+}
+
+.agg{
+    float: left;
+}
+.out{
+    float: right;
+}
+
+.menu_navigazione {
+    font-size:x-large;
+    background-color:gold;
+    text-align:center;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+.menu_navigazione > ul > li {
+    display: inline-block;
+    margin:1%
+}
+
+
+.h1{
+    float:left;
+}
+
+.h3{
+    float:right;
+}

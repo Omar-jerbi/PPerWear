@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>PayPerWear -Update Profile</title>
     <script src="js/validateupdate.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>

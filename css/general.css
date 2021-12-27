@@ -2,3 +2,23 @@
     width: 500px;
     height: auto;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: #f7f2f5;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+

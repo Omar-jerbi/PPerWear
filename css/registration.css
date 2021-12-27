@@ -1,0 +1,23 @@
+.formregistration{
+    background-color: aqua;
+    font-size:xxx-large;
+    padding:5%
+}
+
+.IN{
+    text-align: center;
+}
+
+.submit{
+    font-size:large;
+    width:30%;
+    
+}
+
+.pwmail> input{
+    font-size: large;
+}
+
+.names> input{
+    font-size: large;
+}

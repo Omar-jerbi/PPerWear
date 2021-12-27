@@ -5,6 +5,10 @@
     <title>PayPerWear -Registration</title>
     <script src="js/validateformregistration.js"></script>
     <script src="js/fetchAPImailverif.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
     <?php
@@ -24,7 +28,7 @@
 
 
     <div class="maincontent">
-        <form action="php\Fregistration.php" method="post" onsubmit="return validateForm()">
+        <form class="formregistration" action="php\Fregistration.php" method="post" onsubmit="return validateForm()">
             <fieldset class="IN">
                 <legend>Nome e Cognome</legend>
                 

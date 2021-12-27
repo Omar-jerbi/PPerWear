@@ -1,0 +1,19 @@
+.formlogin{
+    background-color: aqua;
+    font-size:xxx-large;
+    padding:5%
+}
+
+.pwmail > input{
+    font-size: large;
+}
+
+.IN{
+    text-align: center;
+}
+
+.submit{
+    font-size:large;
+    width:30%;
+    
+}
