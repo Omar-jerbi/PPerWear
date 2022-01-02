@@ -37,7 +37,7 @@
 
 
     
-    include("/xampp/htdocs/sawproject/db/connection.php");//$connection
+    include("../db/connection.php");//$connection
 
     $f = mysqli_real_escape_string($connection, htmlspecialchars($_POST["firstname"]));
     $l = mysqli_real_escape_string($connection, htmlspecialchars($_POST["lastname"]));

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>PayPerWear -Registration</title>
     <script src="js/validateformregistration.js"></script>
-    <script src="js/fetchAPImailverif.js"></script>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
@@ -27,8 +26,8 @@
     ?>
 
 
-    <div class="maincontent">
-        <form class="formregistration" action="php\Fregistration.php" method="post" onsubmit="return validateForm()">
+<div class="maincontent">
+    <form class="formregistration" action="php\Fregistration.php" method="post" onsubmit="return validateForm()">
             <fieldset class="IN">
                 <legend>Nome e Cognome</legend>
                 
@@ -45,21 +44,24 @@
                 <legend>E-mail e Password</legend>
                 <div class="pwmail">
                     <input type="email" id="email" name="email" placeholder="E-mail" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" onchange="return mailVerif()">
-                        
+                    
                     <input type="password" id="pass" name="pass" placeholder="Password" required>
-                        
+                    
                     <input type="password" id="confirm" name="confirm" placeholder="Conferma Password" required>
                 </div>  
                 
-             
-
+                
+                
                 <input id="submit" name="submit" class="submit" type="submit" value="Registrati!">
             </fieldset> 
         </form>
     </div> 
-
+    
     <?php
         include("common/footer.php");
-    ?>
+        ?>
 </body>
+
+<script src="js/fetchAPImailverif.js"></script>
+
 </html>

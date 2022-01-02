@@ -16,7 +16,7 @@
             <script>
                 alert("PRIMA DEVI FARE IL LOGIN");
             </script>';
-            header("refresh:0; url= /sawproject/_index.php");
+            header("refresh:0; url= https://saw21.dibris.unige.it/~S4540263/_index.php");
             exit;    
         }
         

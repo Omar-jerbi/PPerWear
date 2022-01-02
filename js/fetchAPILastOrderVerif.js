@@ -1,5 +1,5 @@
 function checkLastOrder(){
-    fetch("/sawproject/php/fetchAPILastOrderVerif.php", {
+    fetch("https://saw21.dibris.unige.it/~S4540263/php/fetchAPILastOrderVerif.php", {
         method: "post",
         headers: { "Content-type": "application/x-www-form-urlencoded" },
         }).then(

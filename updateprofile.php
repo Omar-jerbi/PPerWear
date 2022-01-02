@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>PayPerWear -Update Profile</title>
-    <script src="js/validateupdate.js"></script>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
@@ -35,7 +34,7 @@
                 <div class="gener">
                     Generalità:<input placeholder="Nome" type="text" name="firstname" id="firstname" required pattern="[A-Z a-zè'òéàù]{1,30}">
                     <input placeholder="Cognome" type="text" name="lastname" id="lastname" required pattern="[A-Z a-zè'òéàù]{1,30}">
-                    <input placeholder="E-mail" type="email" name="lastname" id="lastname" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    <input placeholder="E-mail" type="email" name="email" id="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" onchange="return mailVerif()">
                 </div>
                 
                 <div class="sesso">
@@ -121,5 +120,6 @@
     ?>
 </body>
 
+<script src="js/validateupdate.js"></script>
 
 </html>

@@ -77,9 +77,9 @@
                     echo"<h3>Assicurati di aver inserito la misura per ogni articolo selezionato</h3>";    
                 }else{
                     if(!isset($_GET["controllodata"]) || $_GET["controllodata"] == 'si'){
-                        echo'<a id="OK" href="conferma.php" onmouseover="return checkLastOrder()">Continua!</a>';  //OK!
+                        echo'<a id="OK" href="https://saw21.dibris.unige.it/~S4540263/conferma.php" onmouseover="return checkLastOrder()">Continua!</a>';  //OK!
                     }else{
-                        echo'<a id="OK" href="conferma.php">Conferma!</a>';  //OK!
+                        echo'<a id="OK" href="https://saw21.dibris.unige.it/~S4540263/conferma.php">Conferma!</a>';  //OK!
                     }
                 }
             }else{

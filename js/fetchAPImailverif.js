@@ -1,7 +1,7 @@
 function mailVerif(){
     let usermail = document.getElementById("email").value;
 
-    fetch("/sawproject/php/fetchAPImailverif.php", {
+    fetch("https://saw21.dibris.unige.it/~S4540263/php/fetchAPImailverif.php", {
         method: "post",
         headers: { "Content-type": "application/x-www-form-urlencoded" },
         body: "email=" + usermail,

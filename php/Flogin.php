@@ -3,7 +3,7 @@
 
 
 if(!isset($_POST["email"])||!isset($_POST["pass"])){//quando si accede a questo file direttamnete tramite l'url
-    header("Location: ../_index.php");    
+    header("Location: https://saw21.dibris.unige.it/~S4540263/_index.php");    
     exit;
 }
 
@@ -12,12 +12,12 @@ if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     echo '<script>
     alert("Dati errati, riprova!");
     </script>';
-    header("refresh:0; url= ../login.php");
+    header("refresh:0; url=  https://saw21.dibris.unige.it/~S4540263/login.php");
     exit;
 }
 
 
-include_once("/xampp/htdocs/sawproject/db/connection.php");//$connection
+include_once("../db/connection.php");//$connection
 
 $m = mysqli_real_escape_string($connection ,htmlspecialchars($_POST["email"]));
 $pw =  trim($_POST["pass"]);
@@ -31,7 +31,7 @@ if(mysqli_affected_rows($connection) == 0){
     echo '<script>
     alert("Dati errati, riprova!");
     </script>';
-    header("refresh:0; url= ../formlogin.php");
+    header("refresh:0; url=  https://saw21.dibris.unige.it/~S4540263/formlogin.php");
     exit;
 }else{
     $arr = mysqli_fetch_array($res);
@@ -41,7 +41,7 @@ if(mysqli_affected_rows($connection) == 0){
         echo '<script>
         alert("Dati errati, riprova!");
         </script>';
-        header("refresh:0; url= ../formlogin.php");
+        header("refresh:0; url=  https://saw21.dibris.unige.it/~S4540263/formlogin.php");
         exit;
     }else{
         
@@ -78,7 +78,7 @@ if(mysqli_affected_rows($connection) == 0){
             }
 
             
-            header("refresh:0; url= ../_index.php");            
+            header("refresh:0; url=  https://saw21.dibris.unige.it/~S4540263/_index.php");            
         }
     }
 ?>

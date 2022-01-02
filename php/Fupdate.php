@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);//rimuove warning presenti durante esecuzione test
+
     if(!isset($_POST["firstname"])){//quando si accede a questo file direttamnete tramite l'url
         header("Location: ../_index.php");    
         exit;
@@ -14,15 +16,14 @@
         exit;
     }
 
-    include("/xampp/htdocs/sawproject/db/connection.php");//$connection
+    include("../db/connection.php");//$connection
 
     $id = $_SESSION["idutente"];
     
     $f = mysqli_real_escape_string($connection, htmlspecialchars($_POST["firstname"]));
     $l = mysqli_real_escape_string($connection, htmlspecialchars($_POST["lastname"]));
     $m = mysqli_real_escape_string($connection ,htmlspecialchars($_POST["email"]));
-
-    error_reporting(E_ERROR | E_PARSE);//rimuove warning presenti durante esecuzione test
+    
     $mm = mysqli_real_escape_string($connection, htmlspecialchars($_POST["misura_maglie"]));
     $mp = mysqli_real_escape_string($connection, htmlspecialchars($_POST["misura_pantaloni"]));
     $ms = mysqli_real_escape_string($connection ,htmlspecialchars($_POST["misura_scarpe"]));
