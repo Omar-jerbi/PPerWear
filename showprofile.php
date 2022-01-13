@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/showprofile.css">
 </head>
 <body>
     <?php
@@ -27,15 +28,15 @@
     <div class="maincontent">
 
         <div class="greetings">
-            Ciao <?php echo ucwords($_SESSION["firstname"]);?>! Questi sono i dati che ci hai fornito. <br>
+            Ciao <b><?php echo ucwords($_SESSION["firstname"]);?>!</b> Questi sono i dati che ci hai fornito. <br>
             Ricorda che puoi cambiarli in qualsiasi momento aggiornando il tuo profilo!
         </div>
 
         <?php 
-            include("show_profile.php");
+            include("show_profile.php");//info base
             
             if(isset($_SESSION["tel"])){
-                include("profileext.php");
+                include("profileext.php");//info estese
             }else{
                 echo "<h2>Sembra che non ci hai comunicato alcune informazioni essenziali. Aggiungile aggiornando il tuo profilo!</h2>";
             }

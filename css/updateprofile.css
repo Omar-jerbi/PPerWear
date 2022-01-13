@@ -1,14 +1,15 @@
-.formlogin{  
+
+.maincontent > form{
     font-size:xxx-large;
     padding:5%
 }
 
-.pwmail > input{
-    font-size: large;
-}
-
 .IN{
     text-align: center;
+}
+
+.inputs{
+    font-size: large;
 }
 
 .submit{

@@ -1,0 +1,11 @@
+.maincontent{
+    padding: 5%;
+}
+.greetings{
+    border-width: 1px;
+    border-color: black;
+    border-style: ridge;
+    padding: 20px;
+    font-size: x-large;
+    margin-bottom: 5%;
+}

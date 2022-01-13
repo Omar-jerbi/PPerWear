@@ -1,6 +1,14 @@
 footer{
     background-color: #60447c;
+    color: #f7f2f5;
     position: sticky;
-    padding-bottom: 1px ;
     margin: 0;
+    display: flex;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+hr{
+    color: #f7f2f5;
 }

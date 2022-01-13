@@ -18,6 +18,10 @@ a{
     text-decoration: none;
 }
 
+a:any-link{
+    color: #be98ad;
+}
+
 li{
     list-style: none;
 }

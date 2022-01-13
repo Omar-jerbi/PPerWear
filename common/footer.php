@@ -1,5 +1,4 @@
 <footer>
-    <hr>
     <div class="left">
         <h3>Progetto di laboratorio</h3>
         <h3>Anno 2021/2022</h3>
@@ -21,7 +20,7 @@
     <hr>
 
     <div class="mid2">
-        <h4>Credits: Omar Jerbi,   Matricola = 4540263,   Email = s4540263@studenti.unige.it</h4>
+        <h3>Credits: Omar Jerbi,   Matricola = 4540263,   Email = s4540263@studenti.unige.it</h3>
     </div>
-    <hr>
+
 </footer>

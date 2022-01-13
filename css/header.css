@@ -7,7 +7,8 @@ header > nav > ul > li{
     font-size: xxx-large;
     padding-top: 150px;
     padding-bottom: 150px;
-    background-color: #968809;
+    background-color: #be98ad;
+    color: #f7f2f5;
 }
 
 .r > form > input{
@@ -30,17 +31,30 @@ header > nav > ul > li{
     font-size: larger;
 }
 
+.h > a:any-link{
+    color: #60447c;
+}
+
+.pl > a:any-link{
+    color: #60447c;
+}
+
 .menu_azioni{
-    background-color:red;
+    background-color:#d1b6c5;
     padding-top:1px;
     padding-bottom:9px;
     text-align:center;
     font-size:x-large;
+    padding-right: 55px;
 }
 
 .menu_azioni > ul > li {
     display: inline-block;
     margin:1%
+}
+
+.menu_azioni > ul > li > a:any-link{
+    color:#f7f2f5;
 }
 
 .agg{
@@ -52,10 +66,14 @@ header > nav > ul > li{
 
 .menu_navigazione {
     font-size:x-large;
-    background-color:gold;
+    background-color:#e4d4dd;
     text-align:center;
     padding-top:1px;
     padding-bottom:1px;
+}
+
+.menu_navigazione > ul{
+    margin-right: 30px;
 }
 
 .menu_navigazione > ul > li {
