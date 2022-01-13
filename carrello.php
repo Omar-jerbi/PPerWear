@@ -6,35 +6,21 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/carrello.css">
 </head>
-
-
-<style>
-    img{
-        width: 200px;
-        height: 200px;
-    }
-    
-    .carrellovuoto{
-        width: 500px;
-        height: auto;       
-    }
-    </style>
-
 
 
 <body>
     <?php
         include("common/header.php");
     ?>
-
 <div class="maincontent">
     
     <?php
         if(!isset($_COOKIE["carrello"])){
             
             include("carrellovuoto.php");
-            
+            echo '</div>';
             include("common/footer.php");
             exit;
         }

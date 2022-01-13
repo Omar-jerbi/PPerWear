@@ -6,22 +6,8 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/novita.css">
 </head>
-
-<style>
-    img{
-        width: 500px;
-        height: 400;
-        display: block;
-    }
-
-    .maglie > li, .pantaloni >li , .scarpe > li{
-        display: inline-block;
-        text-align: center;
-    }
-
-
-</style>
 
 
 <body>
@@ -31,7 +17,7 @@
 
     <div class="maincontent">
         <form action="php/Fselezionearticoli.php" method="post">
-            <h1>Selezione di Wears speciali per questo periodo speciale</h1>
+            <h1>Selezione di Wears speciali:</h1>
 
                 <ul class="maglie">
                     <h1>Scegli una maglia!</h1>

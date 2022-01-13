@@ -17,6 +17,8 @@ function checkLastOrder(){
                 }else{
                     document.getElementById("OK").innerHTML = 'Puoi fare solamente un ordine al mese!';
                     document.getElementById("OK").href = '#';
+                    document.getElementById("OK").style.right = '35%';
+                    document.getElementById("OK").style.left = '35%';
                 }
             }
         )

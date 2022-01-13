@@ -1,0 +1,45 @@
+img{
+    width: 500px;
+    height: 400;
+    display: block;
+}
+
+.maglie > li, .pantaloni >li , .scarpe > li{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+.maglie , .pantaloni , .scarpe{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.maincontent > form > input{
+    background-color: #be98ad;
+    border: none;
+    margin: 10px;
+    margin-right: 35%;
+    margin-left: 35%;
+    width: 500px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: larger;
+    color: #f7f2f5;
+}
+
+.maincontent > form > input:hover{
+    color: #60447c;
+}
+
+.maincontent > form >ul > li>select{
+    margin: 20px;
+    font-size: larger;
+}
+
+.maincontent > form >ul > li>input{
+    margin-right: -15px;
+    width: 20px;
+    height: 20px;
+    background: red;
+}

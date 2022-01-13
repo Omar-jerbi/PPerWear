@@ -1,0 +1,25 @@
+.maincontent{
+    padding: 5%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.carrellovuoto{
+    width: 500px;
+    height: auto;       
+}
+
+#OK{
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    right: 45%;
+    left: 45%;
+    padding: 15px;
+    background-color: #60447c;
+    color: #f7f2f5;
+}
