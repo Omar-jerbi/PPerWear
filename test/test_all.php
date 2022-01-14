@@ -12,10 +12,10 @@ require 'utils.php';
 /****************************************/
 
 // local URL
-$baseurl =  'http://localhost/sawproject';
+//$baseurl =  'http://localhost/sawproject';
 
 // remote URL
-// $baseurl =  'https://saw21.dibris.unige.it/~S1234567/...';
+ $baseurl =  'https://saw21.dibris.unige.it/~S4540263';
 
 
 echo "[+] Testing Registration - Login - Show Profile\n";
@@ -36,8 +36,6 @@ echo "---\n";
 echo "[-] Calling registration.php\n";
 
 register($email, $pass, $first_name, $last_name, $baseurl);
-
-
 
 echo "[-] Calling login.php\n";
 login($email, $pass, $baseurl);

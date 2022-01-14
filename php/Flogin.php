@@ -16,8 +16,8 @@ if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-
-include_once("../db/connection.php");//$connection
+//include_once("../db/connection.php");//$connection
+include(__DIR__."/../db/connection.php");
 
 $m = mysqli_real_escape_string($connection ,htmlspecialchars($_POST["email"]));
 $pw =  trim($_POST["pass"]);

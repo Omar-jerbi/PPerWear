@@ -16,7 +16,7 @@ error_reporting(E_ERROR | E_PARSE);//rimuove warning presenti durante esecuzione
         exit;
     }
 
-    include("../db/connection.php");//$connection
+    include(__DIR__."/../db/connection.php");//$connection
 
     $id = $_SESSION["idutente"];
     

@@ -40,11 +40,5 @@ function validate(x){
         return false;
     }
 
-    // var s = '';
-    // for (let index = 0; index < 5; index++) {
-    //     s = s + arr[index].trim();
-    //     if(index != 4) s = s +'/';
-    // }
-    // document.getElementById("addr").value = s;
    
 }

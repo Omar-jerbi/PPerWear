@@ -35,11 +35,7 @@
                 <div class="gener">
                     Generalità:<input placeholder="Nome" type="text" name="firstname" id="firstname" required pattern="[A-Z a-zè'òéàù]{1,30}">
                     <input placeholder="Cognome" type="text" name="lastname" id="lastname" required pattern="[A-Z a-zè'òéàù]{1,30}">
-<<<<<<< Updated upstream
                     <input placeholder="E-mail" type="email" name="email" id="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" onchange="return mailVerif()">
-=======
-                    <input placeholder="E-mail" type="email" name="email" id="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
->>>>>>> Stashed changes
                 </div>
                 
                 <div class="sesso">
@@ -113,7 +109,7 @@
                     </div>
                 </div>
                 
-                <input class="submit" name="submit" type="submit" value="Modifica!">
+                <input class="submit" name="submit" type="submit" id="submit" value="Modifica!">
             </fieldset>
             
             
@@ -126,5 +122,6 @@
 </body>
 
 <script src="js/validateupdate.js"></script>
+<script src="js/fetchAPImailverifUpdate.js"></script>
 
 </html>
